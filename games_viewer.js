@@ -18,16 +18,22 @@ desc.innerText = game_selected.description;
 document.body.appendChild(desc);
 
 if (game_selected.weburl) {
+    contain = document.createElement("div");
+    contain.style.position = "relative";
     browsertitle = document.createElement("h2");
     browsertitle.innerText = "Play now in browser";
     document.body.appendChild(browsertitle);
     iframe = document.createElement("iframe");
     iframe.src = game_selected.weburl;
-    document.body.appendChild(iframe);
+    contain.appendChild(iframe);
     fullscreenbutton = document.createElement("button");
     fullscreenbutton.innerText = "Full screen";
     fullscreenbutton.onclick = function() { iframe.requestFullscreen() };
-    document.body.appendChild(fullscreenbutton);
+    fullscreenbutton.style.position = "absolute";
+    fullscreenbutton.style.top = "5px";
+    fullscreenbutton.style.left = "5px";
+    contain.appendChild(fullscreenbutton);
+    document.body.appendChild(contain);
 }
 
 downloadstitle = document.createElement("h2");
