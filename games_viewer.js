@@ -24,6 +24,10 @@ if (game_selected.weburl) {
     iframe = document.createElement("iframe");
     iframe.src = game_selected.weburl;
     document.body.appendChild(iframe);
+    fullscreenbutton = document.createElement("button");
+    fullscreenbutton.innerText = "Full screen";
+    fullscreenbutton.onclick = function() { iframe.requestFullscreen() };
+    document.body.appendChild(fullscreenbutton);
 }
 
 downloadstitle = document.createElement("h2");
