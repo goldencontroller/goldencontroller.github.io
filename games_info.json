@@ -1,0 +1,12 @@
+{
+    "escapevelocity": {
+        "weburl": "https://goldencontroller.github.io/escapevelocity",
+        "downloads": {
+            "Linux": "https://github.com/goldencontroller/escapevelocity/releases/download/desktop/escapevelocity-linux.zip",
+            "MacOS": "https://github.com/goldencontroller/escapevelocity/releases/download/desktop/escapevelocity-macos.zip",
+            "Windows": "https://github.com/goldencontroller/escapevelocity/releases/download/desktop/escapevelocity-windows.zip"
+        },
+        "name": "Escape Velocity",
+        "description": "Try to escape a box only by repeatedly setting a velocity vector"
+    }
+}
