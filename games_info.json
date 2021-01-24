@@ -8,5 +8,20 @@
         },
         "name": "Escape Velocity",
         "description": "Try to escape a box only by repeatedly setting a velocity vector"
+    },
+    "simpleworld": {
+        "weburl": "https://goldencontroller.github.io/simpleworld/",
+        "name": "Simple World",
+        "description": "A platforming game with a trash art style and horrible gameplay"
+    },
+    "ducktanks": {
+        "weburl": "https://goldencontroller.github.io/ducktanks/",
+        "name": "Duck Tanks",
+        "description": "Fight your friends and win money!"
+    },
+    "saberpong": {
+        "weburl": "https://goldencontroller.github.io/laserpong/",
+        "name": "Saber Pong",
+        "description": "Pong with lightsabers"
     }
 }
