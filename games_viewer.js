@@ -3,6 +3,7 @@ urlparams = new URLSearchParams(location.search);
 content = new XMLHttpRequest();
 content.open("GET", "https://goldencontroller.github.io/games_info.json");
 content.send();
+console.log(content.responseText)
 content = JSON.parse(content.responseText);
 
 game_selected = content[urlparams.get("game")];
