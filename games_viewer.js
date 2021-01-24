@@ -23,8 +23,6 @@ if (game_selected.weburl) {
     document.body.appendChild(browsertitle);
     iframe = document.createElement("iframe");
     iframe.src = game_selected.weburl;
-    iframe.style.width = "900px";
-    iframe.style.height = "500px";
     document.body.appendChild(iframe);
     fullscreenbutton = document.createElement("button");
     fullscreenbutton.innerText = "Full screen";
@@ -40,9 +38,3 @@ for (key in game_selected.downloads) {
     li.innerHTML = "<a href='" + game_selected.downloads[key] + "'>" + key + "</a>";
     document.body.appendChild(li);
 }
-
-window.addEventListener("keydown", function(e) {
-    if([" ", "ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown"].includes(e.key)) {
-        e.preventDefault();
-    }
-}, false);
