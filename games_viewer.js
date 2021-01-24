@@ -33,8 +33,15 @@ if (game_selected.weburl) {
 downloadstitle = document.createElement("h2");
 downloadstitle.innerText = "Downloads";
 document.body.appendChild(downloadstitle);
-for (key in game_selected.downloads) {
-    li = document.createElement("li");
-    li.innerHTML = "<a href='" + game_selected.downloads[key] + "'>" + key + "</a>";
-    document.body.appendChild(li);
+if (game_selected.downloads) {
+    for (key in game_selected.downloads) {
+        li = document.createElement("li");
+        li.innerHTML = "<a href='" + game_selected.downloads[key] + "'>" + key + "</a>";
+        document.body.appendChild(li);
+    }
+}
+else {
+    message = document.createElement("span");
+    message.innerText = "none";
+    document.body.appendChild(message);
 }
