@@ -10,7 +10,6 @@ frame.src = content[urlparams.get("game")].weburl;
 document.body.appendChild(frame);
 
 fireEvent = function(key) {
-    event = document.createEvent("HTMLEvents");
-    event.key = key;
-    frame.contentDocument.dispatchEvent(event);
+    event = new KeyboardEvent("keydown", { "key": key });
+    frame.dispatchEvent(event);
 }
