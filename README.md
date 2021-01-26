@@ -2,8 +2,6 @@
 title: Golden Controller
 description: I make horrible games
 ---
-# Golden Controller
-I make horrible games
 <h2>Games</h2>
  - <a href="games_viewer?game=escapevelocity">Escape Velocity</a> (Top pick)
  - <a href="games_viewer?game=simpleworld">Simple World</a> (Bottom pick)
