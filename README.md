@@ -1,3 +1,7 @@
+---
+title: Golden Controller
+description: I make horrible games
+---
 # Golden Controller
 I make horrible games
 <h2>Games</h2>
