@@ -11,18 +11,19 @@ document.title = game_selected.name + " | Games Viewer";
 
 header = document.createElement("h1");
 header.innerText = game_selected.name;
-document.body.appendChild(header);
+document.getElementById("bodycontent").appendChild(header);
 
 desc = document.createElement("p");
 desc.innerText = game_selected.description;
-document.body.appendChild(desc);
+document.getElementById("bodycontent").appendChild(desc);
 
 if (game_selected.weburl) {
     contain = document.createElement("div");
     contain.style.position = "relative";
+    contain.id = "iframeparent";
     browsertitle = document.createElement("h2");
     browsertitle.innerText = "Play now in browser";
-    document.body.appendChild(browsertitle);
+    document.getElementById("bodycontent").appendChild(browsertitle);
     iframe = document.createElement("iframe");
     iframe.src = game_selected.weburl;
     contain.appendChild(iframe);
@@ -33,21 +34,21 @@ if (game_selected.weburl) {
     fullscreenbutton.style.top = "5px";
     fullscreenbutton.style.left = "5px";
     contain.appendChild(fullscreenbutton);
-    document.body.appendChild(contain);
+    document.getElementById("bodycontent").appendChild(contain);
 }
 
 downloadstitle = document.createElement("h2");
 downloadstitle.innerText = "Downloads";
-document.body.appendChild(downloadstitle);
+document.getElementById("bodycontent").appendChild(downloadstitle);
 if (game_selected.downloads) {
     for (key in game_selected.downloads) {
         li = document.createElement("li");
         li.innerHTML = "<a href='" + game_selected.downloads[key] + "'>" + key + "</a>";
-        document.body.appendChild(li);
+        document.getElementById("bodycontent").appendChild(li);
     }
 }
 else {
     message = document.createElement("span");
     message.innerText = "none";
-    document.body.appendChild(message);
+    document.getElementById("bodycontent").appendChild(message);
 }
