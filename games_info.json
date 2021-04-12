@@ -4,7 +4,8 @@
         "downloads": {
             "Linux": "https://github.com/goldencontroller/escapevelocity/releases/download/desktop/escapevelocity-linux.zip",
             "MacOS": "https://github.com/goldencontroller/escapevelocity/releases/download/desktop/escapevelocity-macos.zip",
-            "Windows": "https://github.com/goldencontroller/escapevelocity/releases/download/desktop/escapevelocity-windows.zip"
+            "Windows": "https://github.com/goldencontroller/escapevelocity/releases/download/desktop/escapevelocity-windows.zip",
+            "Legend": "https://legendvc.netlify.app/featured_games/legendports-escapevelocity.lvc"
         },
         "name": "Escape Velocity",
         "description": "Try to escape a box only by repeatedly setting a velocity vector"
@@ -16,6 +17,9 @@
     },
     "ducktanks": {
         "weburl": "https://goldencontroller.github.io/ducktanks/",
+        "downloads": {
+            "Legend": "https://legendvc.netlify.app/featured_games/legendports-ducktanks.lvc"
+        },
         "name": "Duck Tanks",
         "description": "Fight your friends and win money!"
     },
