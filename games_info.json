@@ -27,5 +27,10 @@
         "weburl": "https://goldencontroller.github.io/laserpong/",
         "name": "Saber Pong",
         "description": "Pong with lightsabers"
+    },
+    "apoc": {
+        "weburl": "https://goldencontroller.github.io/apoc/game",
+        "name": "APOC",
+        "description": "Arcade-style zombie shooter"
     }
 }
